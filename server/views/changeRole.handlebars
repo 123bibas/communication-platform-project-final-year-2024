@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeeto Account Notification</title>
+  <style>
+    body {
+      background-color: #f7fafc;
+      padding: 30px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .color-primary {
+      color: #007bff;
+    }
+
+    .color-danger {
+      color: orangered;
+    }
+
+    .color-success {
+      color: #28a745;
+    }
+
+    .color-white {
+      color: #fff;
+    }
+
+    .color-secondary {
+      color: #4a5568;
+    }
+
+    a {
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+
+    .btn {
+      font-size: 1.2rem;
+      font-weight: 400;
+      padding: 8px 16px;
+      margin: 0 5px 0 0;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: #007bff;
+    }
+
+    .btn-secondary {
+      color: #fff;
+      background: transparent;
+      border: 2px solid #007bff;
+    }
+
+    .btn-danger {
+      color: #fff;
+      background: orangered;
+    }
+
+    .btn-success {
+      color: #fff;
+      background: #28a745;
+    }
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      padding: 20px;
+      background-color: #007bff;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .my {
+      margin-top: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo flex-center">
+      <h2 class="color-white">Projeeto</h2>
+    </div>
+    <h2>Hello <span class="color-danger">{{name}}</span></h2>
+    <p class="color-secondary">This is to notify you that your account role was changed.</p>
+    <p class="color-secondary">Please login for confirmation.</p>
+    <br />
+    <br />
+    <a href={{link}} class="btn btn-primary">Login</a>
+    <br /><br />
+    <div class="my">
+      <p class="color-secondary">Regards...</p>
+      <p><b class="color-danger">Projeeto</b> Team</p>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeeto Admin Email</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #333333;
+      font-weight: bold;
+      font-size: 32px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666666;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #1f93ff;
+      margin-top: 30px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Hello <span style="color:#ff6b6b">{{name}}</span></h2>
+    <p>{{message}}</p>
+    <br />
+    <br />
+    <br />
+    <div>
+      <p>Best regards,</p>
+      <p><b style="color:#ff6b6b">Projeeto</b> Team</p>
+      <p style="text-align:center"><a href="{{link}}" class="btn btn-primary">App</a></p>
+    </div>
+  </div>
+</body>
+
+</html>
